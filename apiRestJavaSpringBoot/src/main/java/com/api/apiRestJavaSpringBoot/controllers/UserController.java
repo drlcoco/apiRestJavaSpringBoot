@@ -43,6 +43,12 @@ public class UserController {
         return ResponseEntity.noContent().build();
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<Void> updateUser(@RequestBody Users user) {
+        userService.updateUser(user);
+        return ResponseEntity.noContent().build();
+    }
+
     // Otros métodos de controlador para manejar otras operaciones
 }
 

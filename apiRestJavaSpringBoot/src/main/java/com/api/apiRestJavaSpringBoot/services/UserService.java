@@ -30,6 +30,10 @@ public class UserService {
         userRepository.deleteById(id);
     }
 
+    public void updateUser(Users user) {
+        userRepository.save(user);
+    }
+
     // Otros métodos relacionados con la lógica de negocio
 }
 
