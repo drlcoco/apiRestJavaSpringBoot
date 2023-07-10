@@ -49,6 +49,6 @@ public class UserController {
         return ResponseEntity.noContent().build();
     }
 
-    // Otros métodos de controlador para manejar otras operaciones
+    // Otros métodos de controlador para manejar otras operaciones personalizadas
 }
 
